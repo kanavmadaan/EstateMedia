@@ -1017,11 +1017,60 @@ form select:focus {
   margin-top: 0 !important;
 }
 
-@media (max-width: 640px){
-  .container{ padding-left: 16px !important; padding-right: 16px !important; }
-  .grid{ grid-template-columns: 1fr !important; }
-  .heroInner, .split{ display:block !important; }
-  .price-card--image{ min-height: 420px; }
-  .price-card__overlay h3{ font-size: 18px; }
-  .price-card__overlay .price{ font-size: 34px; }
+/* ========= MOBILE RESCUE PATCH (EstateMedia) ========= */
+
+/* 0) Prevent squeeze from fixed widths/min-widths */
+html, body { max-width: 100%; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+img, video { max-width: 100%; height: auto; }
+
+/* 1) Use a wider breakpoint (phones + small tablets) */
+@media (max-width: 900px){
+
+  /* Containers: give real breathing room */
+  .container { padding-left: 16px !important; padding-right: 16px !important; }
+
+  /* 2) FORCE single-column layouts everywhere */
+  .heroInner,
+  .split,
+  .grid,
+  .grid.features,
+  .grid.pricing,
+  .grid.prices,
+  .prices--home,
+  .prices--feature,
+  .prices--addons {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 3) If any of those were flex rows, force wrap/stack */
+  .heroInner, .split, .nav, .nav-cta {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  /* 4) Kill any accidental scaling that makes things look compressed */
+  body, main, section, .container, .card {
+    transform: none !important;
+  }
+
+  /* 5) Hero: reduce dead space + keep text readable */
+  .hero { padding: 26px 0 !important; }
+  .heroCard { margin-top: 14px !important; }
+
+  /* 6) Pricing cards overlay: give more room for text on mobile */
+  .price-card--image { min-height: 460px !important; }
+  .price-card__overlay { padding: 16px !important; gap: 8px !important; }
+
+  /* 7) Big text: scale down cleanly */
+  .h1 { font-size: 34px !important; line-height: 1.05 !important; }
+  .h2 { font-size: 26px !important; line-height: 1.12 !important; }
+  .h3 { font-size: 18px !important; line-height: 1.2 !important; }
+  .lead, .p { font-size: 16px !important; }
+
+  /* 8) Buttons: full width looks premium on mobile */
+  .btn { width: 100%; justify-content: center; }
 }
+
+/* ========= END PATCH ========= */
