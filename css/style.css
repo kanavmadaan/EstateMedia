@@ -1098,3 +1098,13 @@ img, video { max-width: 100%; height: auto; }
     min-height: 44px !important;
   }
 }
+
+/* Mobile: add breathing room between logo text and CTA buttons */
+@media (max-width: 900px){
+  .topbar .nav{
+    row-gap: 10px !important;   /* space between brand/nav/cta stack */
+  }
+  .topbar .nav-cta{
+    margin-top: 10px !important; /* space above buttons */
+  }
+}
