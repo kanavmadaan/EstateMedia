@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Estate Media</title>
+  <meta name="description" content="Estate Media helps agents market listings with luxury walkthrough videos, virtual tours, and premium photography." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="theme-citrus">
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Estate Media home">
+          <img class="logo" src="assets/img/logo.png" alt="Estate Media logo" />
+          <div>
+            <strong>Estate Media</strong>
+            <span>Luxury Listing Content</span>
+          </div>
+        </a>
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn secondary" href="portfolio.html">See Work</a>
+          <a class="btn" href="contact.html">Book a Shoot</a>
+          <button class="menuBtn" data-menu-btn aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="mobileMenu" data-mobile-menu data-open="false">
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">About</div>
+        <h1 class="h1" style="margin-top:10px">Luxury media for modern real estate.</h1>
+        <p class="p" style="margin-top:14px; max-width:82ch">
+          Estate Media exists for one reason: to help listings stand out with premium visuals that feel intentional, clean, and expensive.
+          We keep the process simple for agents—book, shoot, deliver—while maintaining a luxury-first standard.
+        </p>
+
+        <div class="grid" style="grid-template-columns:1.2fr .8fr; gap:18px; margin-top:18px">
+          <div class="card pad">
+            <div class="kicker">Our approach</div>
+            <h2 class="h2" style="margin-top:10px">Polish without the “overdone” look.</h2>
+            <ul class="checks" style="margin-top:10px">
+              <li><i>✓</i> Clean composition that flatters the space</li>
+              <li><i>✓</i> Natural color and true lighting</li>
+              <li><i>✓</i> Smooth motion and premium pacing</li>
+              <li><i>✓</i> Deliverables built for MLS + social</li>
+            </ul>
+            <div class="small" style="margin-top:10px">Serving GTA & surrounding regions. Travel options available.</div>
+          </div>
+
+          <div class="card" style="border-radius:var(--radius2); overflow:hidden; border:1px solid rgba(255,255,255,.12)">
+            <img alt="Luxury home" style="width:100%; height:100%; object-fit:cover; display:block" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80" />
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:18px">
+          <div class="kicker">What you get</div>
+          <h2 class="h2" style="margin-top:10px">A deliverable set that’s ready to publish.</h2>
+          <div class="grid" style="grid-template-columns:repeat(3,1fr); gap:14px; margin-top:14px">
+            <div class="card pad" style="box-shadow:none">
+              <div class="pill">MLS</div>
+              <div class="h3" style="margin-top:10px">Unbranded options</div>
+              <p class="p">Compliant exports and links for MLS posting.</p>
+            </div>
+            <div class="card pad" style="box-shadow:none">
+              <div class="pill">Social</div>
+              <div class="h3" style="margin-top:10px">Vertical-ready</div>
+              <p class="p">High-impact reels built for attention and saves.</p>
+            </div>
+            <div class="card pad" style="box-shadow:none">
+              <div class="pill">Brand</div>
+              <div class="h3" style="margin-top:10px">Luxury consistency</div>
+              <p class="p">A cohesive look across your listings and marketing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:18px">
+          <div class="split" style="align-items:center">
+            <div>
+              <div class="kicker">Let’s work</div>
+              <h2 class="h2" style="margin-top:10px">Book your first shoot.</h2>
+              <p class="p" style="margin-top:12px">Starting out? Use the intro offer to build your portfolio fast.</p>
+            </div>
+            <div style="display:flex; gap:12px; justify-content:flex-end; flex-wrap:wrap">
+              <a class="btn" href="contact.html">Contact</a>
+              <a class="btn secondary" href="pricing.html">See Packages</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
+      <div>© <span id="year"></span> Estate Media. All rights reserved.</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

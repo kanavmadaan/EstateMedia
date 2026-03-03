@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Estate Media</title>
+  <meta name="description" content="Luxury real estate photo and video style gallery for Estate Media." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="theme-sky">
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Estate Media home">
+          <img class="logo" src="assets/img/logo.png" alt="Estate Media logo" />
+          <div>
+            <strong>Estate Media</strong>
+            <span>Luxury Listing Content</span>
+          </div>
+        </a>
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn secondary" href="pricing.html">View Packages</a>
+          <a class="btn" href="contact.html">Book a Shoot</a>
+          <button class="menuBtn" data-menu-btn aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="mobileMenu" data-mobile-menu data-open="false">
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Portfolio</div>
+        <h1 class="h1" style="margin-top:10px">A bold, luxury-first look.</h1>
+
+        <div class="grid gallery" style="margin-top:18px">
+          <div class="gItem g1"><img alt="Luxury mansion exterior" src="assets/img/luxury-mansion.jpeg" />
+          </div>
+          <div class="gItem g2"><img alt="Luxury living" src="assets/img/luxury-living.jpeg" />
+          </div>
+          <div class="gItem g3"><img alt="Luxury interior" src="assets/img/luxury-interior.jpeg" />
+          </div>
+          <div class="gItem g4"><img alt="Luxury pool" src="assets/img/luxury-pool.jpeg" />
+          </div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/luxury-bathroom.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/2.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/1.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/3.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/4.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/5.jpg" /></div>
+          <div class="gItem g5"><img alt="Luxury bathroom" src="assets/img/6.jpg" /></div>
+          <div class="gItem g2"><img alt="Luxury bathroom" src="assets/img/7.jpg" /></div>
+          <div class="gItem g1"><img alt="Luxury bathroom" src="assets/img/8.jpg" /></div>
+        </div>
+
+        <!-- <div class="card pad" style="margin-top:18px">
+          <div class="kicker">Video Examples</div>
+          <h2 class="h2" style="margin-top:10px">Walkthrough style (embed-ready)</h2>
+          <p class="p" style="margin-top:12px">Drop your YouTube/Vimeo embeds here once you publish your walkthroughs.
+          </p>
+          <div class="grid" style="grid-template-columns:1fr 1fr; gap:14px; margin-top:14px">
+            <div class="card" style="overflow:hidden; border-radius:22px; border:1px solid rgba(255,255,255,.12)">
+              <div
+                style="aspect-ratio:16/9; background:rgba(255,255,255,.05); display:grid; place-items:center; padding:18px">
+                <div>
+                  <div class="pill">Embed 16:9 video</div>
+                  <div class="small" style="margin-top:10px">Replace with YouTube/Vimeo iframe</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="overflow:hidden; border-radius:22px; border:1px solid rgba(255,255,255,.12)">
+              <div
+                style="aspect-ratio:9/16; background:rgba(255,255,255,.05); display:grid; place-items:center; padding:18px">
+                <div>
+                  <div class="pill">Embed 9:16 Reel</div>
+                  <div class="small" style="margin-top:10px">Great for IG/TikTok</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="card pad" style="margin-top:18px">
+          <div class="split" style="align-items:center">
+            <div>
+              <div class="kicker">Want this look?</div>
+              <h2 class="h2" style="margin-top:10px">Book your next listing shoot.</h2>
+              <p class="p" style="margin-top:12px">We’ll recommend the best package for your property type and marketing
+                plan.</p>
+            </div>
+            <div style="display:flex; gap:12px; justify-content:flex-end; flex-wrap:wrap">
+              <a class="btn" href="contact.html">Contact / Book</a>
+              <a class="btn secondary" href="pricing.html">View Pricing</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
+      <div>© <span id="year"></span> Estate Media. All rights reserved.</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

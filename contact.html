@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Estate Media</title>
+  <meta name="description"
+    content="Contact Estate Media to book luxury real estate photos, walkthrough videos, and virtual tours." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="theme-rose">
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Estate Media home">
+          <img class="logo" src="assets/img/logo.png" alt="Estate Media logo" />
+          <div>
+            <strong>Estate Media</strong>
+            <span>Luxury Listing Content</span>
+          </div>
+        </a>
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn secondary" href="pricing.html">View Packages</a>
+          <a class="btn" href="contact.html">Book a Shoot</a>
+          <button class="menuBtn" data-menu-btn aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="mobileMenu" data-mobile-menu data-open="false">
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Contact</div>
+        <h1 class="h1" style="margin-top:10px">Book a shoot or request a quote.</h1>
+        <p class="p" style="margin-top:14px; max-width:82ch">Send the property address, preferred date/time, and what
+          you need (photos, 4K walkthrough, virtual tour, reels, floor plan). We’ll respond quickly.</p>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px; margin-top:18px">
+          <div class="card pad">
+            <div class="kicker">Quick info</div>
+            <h2 class="h2" style="margin-top:10px">Estate Media</h2>
+            <p class="p" style="margin-top:10px">GTA & surrounding areas • 12–24h typical turnaround</p>
+            <ul class="checks" style="margin-top:10px">
+              <!-- Why agents choose Estate Media -->
+              <div class="quickInfoBlock">
+                <h3 class="h3" style="margin-top:14px;">Why agents choose Estate Media</h3>
+                <ul class="checks" style="margin-top:10px;">
+                  <li><i>✓</i> Luxury-first visuals that elevate the listing</li>
+                  <li><i>✓</i> Reliable turnaround and clear communication</li>
+                  <li><i>✓</i> Consistent branding across MLS + socials</li>
+                  <li><i>✓</i> Friendly, on-time, professional on site</li>
+                  <li><i>✓</i> Editorial-grade finishing for a true luxury look</li>
+                  <li><i>✓</i> Lighting balanced for bright, premium interiors</li>
+                  <li><i>✓</i> White-glove experience: discreet, efficient, and detail-focused</li>
+                </ul>
+              </div>
+              <div>
+                <br>
+                <br>
+              </div>
+              <li><i>✓</i> Email: <span>hello@estatemedia.ca</span></li>
+              <li><i>✓</i> Phone/Text: <span>(905)-320-5513</span></li>
+              <li><i>✓</i> Availability: <span>7 days/week (by booking)</span></li>
+            </ul>
+
+          </div>
+
+          <div class="card pad">
+            <div class="kicker">Contact form</div>
+            <h2 class="h2" style="margin-top:10px">Request</h2>
+
+            <!--
+              Hook this form up in 2 minutes:
+              Option A (Formspree): create a form, replace action with your endpoint.
+              Option B (Netlify): add netlify attributes and deploy.
+            -->
+
+            <form data-contact-form action="#" method="post">
+              <div class="formGrid">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" placeholder="(###) ###-####" />
+                </div>
+              </div>
+
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="you@example.com" required />
+
+              <label for="address">Property Address</label>
+              <input id="address" name="address" placeholder="123 Main St, City" required />
+
+              <div class="formGrid">
+                <div>
+                  <label for="service">What do you need?</label>
+                  <select id="service" name="service">
+                    <option>Essentials (Photos)</option>
+                    <option>Photography & Video Slideshow</option>
+                    <option>Video Walk‑Through & Photography</option>
+                    <option>Drone Photography & Video</option>
+                    <option>Instagram / TikTok Video</option>
+                    <option>Custom Tailored Options...</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Preferred Date</label>
+                  <input id="date" name="date" placeholder="e.g., Friday afternoon" />
+                </div>
+              </div>
+
+              <label for="message">Notes</label>
+              <textarea id="message" name="message"
+                placeholder="Approx sqft, property type, any special requests (drone, twilight, etc.)"></textarea>
+
+              <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:12px">
+                <button class="btn" type="submit">Send Request</button>
+                <a class="btn secondary" href="pricing.html">View Pricing</a>
+              </div>
+
+              <div class="small" data-form-status style="display:none; margin-top:10px"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:18px">
+          <div class="kicker">Service area</div>
+          <h2 class="h2" style="margin-top:10px">GTA & Surrounding</h2>
+          <p class="p" style="margin-top:12px">Brampton • Mississauga • Milton • Oakville • Burlington • Toronto • and
+            more.</p>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
+      <div>© <span id="year"></span> Estate Media. All rights reserved.</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
