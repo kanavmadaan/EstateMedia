@@ -1016,3 +1016,12 @@ form select:focus {
 .tight-top .h3 {
   margin-top: 0 !important;
 }
+
+@media (max-width: 640px){
+  .container{ padding-left: 16px !important; padding-right: 16px !important; }
+  .grid{ grid-template-columns: 1fr !important; }
+  .heroInner, .split{ display:block !important; }
+  .price-card--image{ min-height: 420px; }
+  .price-card__overlay h3{ font-size: 18px; }
+  .price-card__overlay .price{ font-size: 34px; }
+}
